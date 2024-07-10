@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrar Película</title>
+    <link rel="stylesheet" href="styles/registrar.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-container">
+          <div class="logo-container">
+            <a href="pages/home.html">
+              <h1 class="logo">Mooviemania</h1>
+            </a>
+          </div>
+          <div class="menu-container">
+            <ul class="menu-list">
+              <a href="pages/home.html">
+                <li class="menu-list-item active">Inicio</li>
+                
+              </a>
+              <li class="menu-list-item">Películas</li>
+              <li class="menu-list-item">Series</li>
+              <li class="menu-list-item">Popular</li>
+              <li class="menu-list-item">Novedades</li>
+              <li class="menu-list-item"><a href="lista.html">Listado de peliculas</a></li>
+            </ul>
+          </div>
+          <div class="profile-container">
+            <a href="/pages/signin.html"
+              ><img class="profile-picture" src="img/profile.jpg" alt=""
+            /></a>
+            <a href=""
+              ><div class="profile-text-container">
+                <span class="profile-text">Perfil</span>
+                <i class="fas fa-caret-down"></i></div></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="form">
+      <h1>Registrar Película</h1>
+      <div class="card">
+        <form action="movies" method="post" class="formulario">
+          <label for="nombre">Nombre de la Película: </label>
+          <input type="text" name="nombre" maxlength="255" required />
+          <label for="descripcion">Descripción: </label>
+          <input type="text" name="descripcion" maxlength="512" required />
+          <label for="genero">Género: </label>
+          <input type="text" name="genero" maxlength="128" required />
+          <label for="calificacion">Calificación: </label>
+          <input type="number" name="calificacion" min="0" max="99" required />
+          <label for="anio">Año: </label>
+          <input type="number" name="anio" min="1900" max="2099" required />
+          <label for="estrellas">Estrellas: </label>
+          <input type="number" name="estrellas" min="0" max="5" required />
+          <label for="director">Director: </label>
+          <input type="text" name="director" maxlength="255" required />
+          <input type="submit" value="Registrar Película" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

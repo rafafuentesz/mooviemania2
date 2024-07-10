@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="../styles/signup.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-container">
+          <div class="logo-container">
+            <a href="../index.html">
+              <h1 class="logo">Mooviemania</h1>
+            </a>
+          </div>
+          <div class="menu-container">
+            <ul class="menu-list">
+              <a href="../index.html">
+                <li class="menu-list-item active">Inicio</li>
+              </a>
+              <li class="menu-list-item">Películas</li>
+              <li class="menu-list-item">Series</li>
+              <li class="menu-list-item">Popular</li>
+              <li class="menu-list-item">Novedades</li>
+            </ul>
+          </div>
+          <div class="profile-container">
+            <div class="profile-text-container">
+              <a href="/index.html"
+                ><span class="profile-text">Registrarse</span></a
+              >
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="form">
+      <h1>Registrarse</h1>
+      <div class="card">
+        <form action="" method="post" class="formulario">
+          <label for="name">Nombre: </label>
+          <input type="text" name="name" />
+          <label for="email">Email: </label>
+          <input type="email" name="email" />
+          <label for="password">Contraseña: </label>
+          <input type="password" name="password" />
+          <label for="confirm_password">Confirmar Contraseña: </label>
+          <input type="password" name="confirm_password" />
+          <input type="submit" value="Registrarse" />
+          <p style="color: white">
+            ¿Ya tienes una cuenta?
+            <b><a class="cuenta" href="localhost:8080/Mooviemania2">Iniciar Sesión</a></b>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
